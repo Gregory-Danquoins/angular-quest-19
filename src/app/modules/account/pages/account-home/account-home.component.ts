@@ -20,7 +20,7 @@ export class AccountHomeComponent implements OnInit {
       .getUsers()
       .subscribe(
         (data) =>
-          (this.user = data[Math.floor(Math.random() * data.length - 1)])
+          (this.user = data[Math.floor(Math.random() * data.length )])
       );
   }
 }
